@@ -1,0 +1,29 @@
+p {
+  padding: 8px;
+}
+
+.color-black {
+  color:black;
+}
+
+.color-red {
+  color:#d22727;
+}
+
+.color-blue{
+ color:#1616df;
+}
+
+.color-orange {
+  color:#ffa500;
+}
+.color-pink {
+  color:#eba3ce;
+}
+.color-green {
+  color:#5f756e;
+}
+
+.color-transparent{
+  color: transparent;
+}
