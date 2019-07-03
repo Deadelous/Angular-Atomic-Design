@@ -3,10 +3,10 @@ button, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: 150px;
   text-decoration: none;
   cursor: pointer;
-  height: 30px;
+  height: 150px;
   padding: 0;
 }
 
@@ -25,4 +25,8 @@ button, a {
 
 .background-color-transparent{
   background-color: transparent;
+}
+
+.background-color-orange {
+  background-color:#ffa500;
 }

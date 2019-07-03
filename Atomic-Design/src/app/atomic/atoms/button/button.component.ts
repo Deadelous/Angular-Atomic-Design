@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges} from '@angul
 export class ButtonComponent implements OnInit, OnChanges {
   @Input() type: string;
   @Input() backgroundColor: string;
+  @Input() text: string;
 
   @Output() buttonClick = new EventEmitter();
 
