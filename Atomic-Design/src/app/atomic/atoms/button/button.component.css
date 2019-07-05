@@ -1,0 +1,44 @@
+button, a {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  text-decoration: none;
+  cursor: pointer;
+  height: 150px;
+  padding: 0;
+}
+
+.background-color-red {
+  background-color:#F32D03;
+}
+
+.background-color-blue {
+  background-color:#0362F3;
+}
+
+.background-color-green {
+  background-color:#13F303;
+}
+
+
+.background-color-transparent{
+  background-color: transparent;
+}
+
+.background-color-orange {
+  background-color:#ffa500;
+}
+
+.color-blue {
+  color:#0362F3;
+}
+
+.color-red {
+ color: #F32D03
+}
+
+.color-black{
+  color: black
+}

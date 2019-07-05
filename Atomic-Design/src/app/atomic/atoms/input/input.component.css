@@ -1,0 +1,19 @@
+input {
+  padding: 8px;
+}
+
+input:required {
+  border: 1px solid green;
+}
+input:required:invalid {
+  border: 1px solid red;
+}
+
+.color-black {
+  color:black;
+}
+
+.color-red {
+  color:#d22727;
+}
+
