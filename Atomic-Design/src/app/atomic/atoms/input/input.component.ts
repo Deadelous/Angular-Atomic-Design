@@ -7,12 +7,13 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class InputComponent implements OnInit, OnChanges {
   @Input() size: string;
+  @Input() value: string;
   @Input() color: string;
   @Input() placeholder: string;
 
   constructor() { }
 
-  value: string = "";
+  inputValue: string = "";
   inputColor: string;
 
   ngOnInit() {
