@@ -10,6 +10,12 @@ import { HeaderComponent } from './atomic/atoms/header/header.component';
 import { SearchComponent } from './atomic/molecules/search/search.component';
 import { InputComponent } from './atomic/atoms/input/input.component';
 
+import { IconBookmarkComponent } from './atomic/atoms/icon/icon-bookmark/icon-bookmark.component';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IconAdressbookComponent } from './atomic/atoms/icon/icon-adressbook/icon-adressbook.component';
+import { IconInformationComponent } from './atomic/atoms/icon/icon-information/icon-information.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +23,20 @@ import { InputComponent } from './atomic/atoms/input/input.component';
     TextComponent,
     HeaderComponent,
     SearchComponent,
-    InputComponent
+    InputComponent,
+    IconBookmarkComponent,
+    IconAdressbookComponent,
+    IconInformationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
