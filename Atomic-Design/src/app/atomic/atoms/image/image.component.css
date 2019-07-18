@@ -1,0 +1,11 @@
+.type-circle{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 75px;
+}
+
+.type-square {
+  transition: 0.3s;
+  width: 12%;
+}
