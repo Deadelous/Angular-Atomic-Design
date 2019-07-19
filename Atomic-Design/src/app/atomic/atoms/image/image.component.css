@@ -6,6 +6,7 @@
 }
 
 .type-square {
-  transition: 0.3s;
-  width: 12%;
+    display: block;
+    margin-right:auto;
+    margin-left: auto;
 }
