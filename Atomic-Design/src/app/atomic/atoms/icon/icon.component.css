@@ -1,0 +1,63 @@
+.fa-icon {
+  border-radius: 50%;
+  border: 1px solid grey;
+  color: white;
+  line-height:1.4em;
+  width: 1.4em;
+  height: 1.4em;
+  text-align: center;
+  display: inline-block;
+  transition:0.5s;
+}
+
+.fa-icon:hover {font-size:2em}
+
+.text-size-xs{
+  font-size: 30px;
+}
+
+.text-size-md{
+  font-size: 3em;
+}
+
+.background-color-red {
+  background-color:#F32D03;
+}
+
+.background-color-blue {
+  background-color:#0362F3;
+}
+
+.background-color-green {
+  background-color:#13F303;
+}
+
+.background-color-transparent{
+  background-color: transparent;
+}
+
+.color-white{
+  color: white;
+}
+
+.color-gray{
+  color: gray;
+}
+
+.color-blue{
+  color: blue;
+}
+
+.color-black{
+  color: black;
+}
+
+.color-green {
+  color:#13F303;
+}
+
+.color-red {
+  color:#F32D03;
+}
+
+
