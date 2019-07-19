@@ -1,9 +1,9 @@
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height:10%;
+  border: 1px solid black;
+  margin: 0;
+  display: flex;
+  min-height: 10vh;
+  flex-direction: column;
   background-color: red;
 }
 
@@ -20,6 +20,8 @@
   height: 50%;
   margin: -1.8em;
   padding-left: 10em;
+  padding-top: 1em;
+
 }
 
 .footer-title {
@@ -43,14 +45,27 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .footer {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+  }
+
+
   .icon-direction {
     display: flex;
     justify-content: center;
     text-align: center;
     width: 25%;
     height: 25%;
-    margin: -0.2em;
+    margin: -1em;
     padding-left: 20em;
+    padding-top: 1em;
   }
 
   .footer-title {
