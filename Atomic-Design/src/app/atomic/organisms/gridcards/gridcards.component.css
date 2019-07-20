@@ -1,9 +1,28 @@
-.style-direction {
+.grid {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
 }
 
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+@media screen and (max-width: 992px) {
+  .grid-column {
+    width: 50%;
+  }
+}

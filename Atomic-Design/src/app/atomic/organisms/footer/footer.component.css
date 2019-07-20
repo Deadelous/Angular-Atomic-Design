@@ -1,9 +1,8 @@
 .footer {
-  border: 1px solid black;
-  margin: 0;
-  display: flex;
-  min-height: 10vh;
-  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
   background-color: red;
 }
 
@@ -42,50 +41,4 @@
   height: auto;
   margin: 1em;
   padding-left: 3em;
-}
-
-@media only screen and (min-width: 600px) {
-  .footer {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    background-color: red;
-  }
-
-
-  .icon-direction {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 25%;
-    height: 25%;
-    margin: -1em;
-    padding-left: 20em;
-    padding-top: 1em;
-  }
-
-  .footer-title {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    margin: -0.2em;
-    padding-left: 2em;
-  }
-
-  .footer-information {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin: 1em;
-    padding-left: 3em;
-  }
-
 }

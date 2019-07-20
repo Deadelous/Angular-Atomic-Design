@@ -13,3 +13,12 @@
 .nav-item a:hover {
   background-color: #111;
 }
+
+
+  @media screen and (max-width: 1200px) and (min-width: 480px) {
+    .nav-item {
+      display: flex;
+      flex-direction: row;
+    }
+
+ }

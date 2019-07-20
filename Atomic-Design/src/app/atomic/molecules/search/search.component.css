@@ -15,8 +15,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .wrap {
-    width: 150%;
-    position: absolute;
+  .searchbar {
+    width:100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    margin: 2px;
   }
 }
