@@ -17,12 +17,12 @@
 .navbar-left {
   display:flex;
   flex-direction: row;
-  width: 33.3%;
-  padding: 0.8em 3em;
+  width: 45%;
+  padding: 0.2em 2em;
 }
 
 .navbar-center {
-   width: 33.3%;
+   width: 55%;
    left: 0;
    text-align: center;
    margin: auto;

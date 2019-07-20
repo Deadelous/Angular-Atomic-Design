@@ -1,6 +1,6 @@
-<footer class="footer">
+<footer class="footer" [ngClass]="[footerColor]">
     <div class="footer-title">
-        <atomic-a-header text="Title" type="h1"></atomic-a-header>
+        <atomic-a-header text="Title" type="h1" color="white"></atomic-a-header>
     </div>
   <div class="icon-direction">
     <atomic-a-icon icon="adress" textSize="size-xs"></atomic-a-icon>
@@ -8,6 +8,6 @@
     <atomic-a-icon icon="information" textSize="size-xs"></atomic-a-icon>
   </div>
   <div class="footer-information">
-    <atomic-a-paragraph text="information"></atomic-a-paragraph>
+    <atomic-a-paragraph text="information" color="white"></atomic-a-paragraph>
   </div>
 </footer>
