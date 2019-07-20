@@ -1,11 +1,10 @@
-button, a {
-  border: none;
+button {
+  border: 1px solid #00B4CC;
   padding: 4px 25px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
 

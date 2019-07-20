@@ -20,6 +20,7 @@ import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.compo
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
 import { FooterComponent } from './atomic/organisms/footer/footer.component';
+import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './atomic/organisms/footer/footer.component';
     ParagraphComponent,
     GridcardsComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    UnorderdlistComponent
   ],
   imports: [
     BrowserModule,

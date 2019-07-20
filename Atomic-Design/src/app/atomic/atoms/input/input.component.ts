@@ -13,7 +13,7 @@ export class InputComponent implements OnInit, OnChanges {
 
   constructor() { }
 
-  inputValue: string = "";
+  inputValue: string;
   inputColor: string;
 
   ngOnInit() {
