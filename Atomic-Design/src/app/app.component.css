@@ -4,24 +4,5 @@
 }
 
 #content-wrap {
-  padding-bottom: 2.4rem;
-}
-
-#title {
-  text-align: center;
-}
-
-
-@media only screen and (max-width: 600px) {
-  #page-container {
-
-    position: relative;
-    padding-top: 6em;
-    min-height: 100vh;
-  }
-
-  #content-wrap {
-    padding-bottom: 2.4rem;
-
-  }
+  padding-bottom: 2.5rem;    /* Footer height */
 }

@@ -1,8 +1,9 @@
 .footer {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 5em;
+  height: 100px;
 }
 
 .adress {
@@ -48,4 +49,10 @@
 
 .backgroundcolor-green {
   background-color: #c5d8b2
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    position: static;
+ }
 }

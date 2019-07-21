@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UnorderdlistComponent implements OnInit {
   @Input() text: string;
-  @Input() link: string;
+  @Input() link: string[];
 
   listType: string;
 

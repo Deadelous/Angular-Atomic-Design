@@ -21,6 +21,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
 import { FooterComponent } from './atomic/organisms/footer/footer.component';
 import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AtomComponent } from './pages/atom/atom.component';
+import { MoleculeComponent } from './pages/molecule/molecule.component';
+import { OrganismComponent } from './pages/organism/organism.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.
     GridcardsComponent,
     NavbarComponent,
     FooterComponent,
-    UnorderdlistComponent
+    UnorderdlistComponent,
+    HomeComponent,
+    AtomComponent,
+    MoleculeComponent,
+    OrganismComponent
   ],
   imports: [
     BrowserModule,
