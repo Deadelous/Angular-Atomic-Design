@@ -1,0 +1,38 @@
+.grid {
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: flex;
+    margin: 15px;
+  }
+
+  .grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 30vh;
+  }
+}
+

@@ -1,0 +1,18 @@
+.type-circle{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 75px;
+}
+
+.type-square {
+    display: block;
+    text-align: center;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.image {
+  width: 100%;
+  height: 100px;
+}
