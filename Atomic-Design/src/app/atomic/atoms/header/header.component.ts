@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit, OnChanges {
  @Input() text: string;
  @Input() color: string;
  @Input() size: string;
+ @Input() link: string[];
 
  headerColor: string;
  headerType: string;

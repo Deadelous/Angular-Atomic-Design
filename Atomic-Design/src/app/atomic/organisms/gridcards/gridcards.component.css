@@ -16,9 +16,23 @@
   flex: 1;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 600px) {
   .grid {
     display: flex;
+    margin: 15px;
+  }
+
+  .grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 30vh;
   }
 }
 

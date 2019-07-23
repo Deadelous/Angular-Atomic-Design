@@ -10,6 +10,7 @@ export class FooterComponent implements OnInit, OnChanges {
 
 
   footerColor: string;
+
   constructor() { }
 
   ngOnInit() {

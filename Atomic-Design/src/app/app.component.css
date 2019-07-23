@@ -4,5 +4,27 @@
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  min-height: 90vh;
+  padding-bottom: 2.5rem;
+}
+
+#page-footer {
+  padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #content-wrap {
+    padding-bottom: 2.5rem;
+  }
+
+  #page-footer {
+    padding-top: 2rem;
+  }
+
 }

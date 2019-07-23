@@ -39,7 +39,15 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
+.backgroundcolor-black {
+  background-color: #333;
+}
+
+.backgroundcolor-green {
+  background-color: #c5d8b2
+}
+
+@media screen and (max-width: 767px) {
   .navbar input {
     float: none;
     display: block;
@@ -49,21 +57,11 @@
     padding: 14px;
   }
 
-  .navbar-list a:not(:first-child) {
-      float: right;
-      display: block;
+  .navbar-list {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
     }
-
-  .navbar-left {
-    border: 1px solid #ccc;
-  }
-  .navbar-center {
-    border: 1px solid #ccc;
-  }
-
-  .navbar-right {
-    border: 1px solid #ccc;
-  }
 
   #navbar-title {
     display: block;
