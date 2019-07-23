@@ -1,8 +1,16 @@
 
 #content-wrap {
+  text-align: center;
   padding-bottom: 2.4rem;
 }
 
 #title {
   text-align: center;
+}
+
+.levels {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
 }

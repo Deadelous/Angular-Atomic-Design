@@ -23,3 +23,11 @@ p {
 .color-green {
   color:#5f756e;
 }
+
+.font-normal {
+  font-style:normal;
+}
+
+.font-italic {
+ font-style: italic;
+}

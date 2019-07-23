@@ -11,6 +11,8 @@ import { InputComponent } from './atomic/atoms/input/input.component';
 import { ParagraphComponent } from './atomic/atoms/paragraph/paragraph.component';
 import { TextComponent } from './atomic/atoms/text/text.component';
 import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.component';
+import { LinkComponent } from './atomic/atoms/link/link.component';
+import { ExternlinkComponent } from './atomic/atoms/externlink/externlink.component';
 
 import { CardComponent } from './atomic/molecules/card/card.component';
 import { SearchComponent } from './atomic/molecules/search/search.component';
@@ -20,6 +22,8 @@ import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.compo
 import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   imports: [CommonModule,
@@ -36,11 +40,13 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     ParagraphComponent,
     TextComponent,
     UnorderdlistComponent,
+    LinkComponent,
+    ExternlinkComponent,
     CardComponent,
     SearchComponent,
     FooterComponent,
     GridcardsComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   exports: [ButtonComponent,
     HeaderComponent,
@@ -50,6 +56,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     ParagraphComponent,
     TextComponent,
     UnorderdlistComponent,
+    ExternlinkComponent,
+    LinkComponent,
     CardComponent,
     SearchComponent,
     FooterComponent,
