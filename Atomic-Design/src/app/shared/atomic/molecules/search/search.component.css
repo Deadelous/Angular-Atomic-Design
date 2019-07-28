@@ -5,13 +5,17 @@
   display: flex;
   margin: 4px;
 }
-
 .search-input {
   width: 200px;
+  height: 20px;
 }
 .search-button {
   text-align: center;
   padding-left: 20px;
+}
+
+.filter-wrap{
+  position: relative;
 }
 
 @media only screen and (max-width: 600px) {

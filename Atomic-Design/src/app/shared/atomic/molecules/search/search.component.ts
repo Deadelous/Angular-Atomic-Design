@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { atomics } from '../../../model/mock_atomic';
+import { SearchService } from '../../../services/search.service';
 
 @Component({
   selector: 'atomic-m-search',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+ // @Input() selectedAtomic: IAtomicItem;
 
-  constructor() { }
+  atomics: any[];
+
+  constructor(private searchService: SearchService) { }
+
+  searchName: '';
 
   ngOnInit() {
+
   }
 
 }

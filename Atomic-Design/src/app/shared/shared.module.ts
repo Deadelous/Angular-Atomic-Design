@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 import { ButtonComponent } from './atomic/atoms/button/button.component';
 import { HeaderComponent } from './atomic/atoms/header/header.component';
@@ -20,9 +22,10 @@ import { SearchComponent } from './atomic/molecules/search/search.component';
 import { FooterComponent } from './atomic/organisms/footer/footer.component';
 import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.component';
 import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
+
+import { SearchService } from './services/search.service';
+import { FilterPipe } from './filter/shared.filter';
 
 
 @NgModule({
@@ -47,6 +50,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,
+    FilterPipe
   ],
   exports: [ButtonComponent,
     HeaderComponent,
@@ -63,9 +67,10 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,
+    FilterPipe,
     CommonModule
   ],
-  providers: []
+  providers: [SearchService]
 })
 export class SharedModule {
 }
