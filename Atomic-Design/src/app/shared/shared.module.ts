@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from  '@angular/common/http';
 
 import { ButtonComponent } from './atomic/atoms/button/button.component';
 import { HeaderComponent } from './atomic/atoms/header/header.component';
@@ -15,6 +16,7 @@ import { TextComponent } from './atomic/atoms/text/text.component';
 import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.component';
 import { LinkComponent } from './atomic/atoms/link/link.component';
 import { ExternlinkComponent } from './atomic/atoms/externlink/externlink.component';
+import { TableComponent } from './atomic/atoms/table/table.component';
 
 import { CardComponent } from './atomic/molecules/card/card.component';
 import { SearchComponent } from './atomic/molecules/search/search.component';
@@ -28,13 +30,15 @@ import { SearchService } from './services/search.service';
 import { FilterPipe } from './filter/shared.filter';
 
 
+
 @NgModule({
   imports: [CommonModule,
     RouterModule,
     FontAwesomeModule,
     FlexLayoutModule,
-    FormsModule
-],
+    FormsModule,
+    HttpClientModule
+  ],
   declarations: [ButtonComponent,
     HeaderComponent,
     IconComponent,
@@ -43,6 +47,7 @@ import { FilterPipe } from './filter/shared.filter';
     ParagraphComponent,
     TextComponent,
     UnorderdlistComponent,
+    TableComponent,
     LinkComponent,
     ExternlinkComponent,
     CardComponent,
@@ -50,7 +55,7 @@ import { FilterPipe } from './filter/shared.filter';
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,
-    FilterPipe
+    FilterPipe,
   ],
   exports: [ButtonComponent,
     HeaderComponent,
@@ -60,6 +65,7 @@ import { FilterPipe } from './filter/shared.filter';
     ParagraphComponent,
     TextComponent,
     UnorderdlistComponent,
+    TableComponent,
     ExternlinkComponent,
     LinkComponent,
     CardComponent,

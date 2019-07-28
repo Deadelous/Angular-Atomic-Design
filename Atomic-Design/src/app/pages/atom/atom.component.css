@@ -1,14 +1,3 @@
-.table {
-  text-align:center;
-  margin-left:auto;
-  margin-right:auto;
-  width:100px;
-}
-
-#atomic-list th, td{
-  border:1px solid black;
-}
-
 .search-input {
   width: 200px;
 }

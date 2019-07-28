@@ -11,6 +11,7 @@ import { MoleculeComponent } from './pages/molecule/molecule.component';
 import { OrganismComponent } from './pages/organism/organism.component';
 
 import { SharedModule } from './shared/shared.module';
+import { AtomicdetailComponent } from './pages/atomicdetail/atomicdetail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     AtomComponent,
     MoleculeComponent,
-    OrganismComponent
+    OrganismComponent,
+    AtomicdetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,2 @@
-<input type="text" placeholder="name" [(ngModel)]="atomicName">
-    <input type="text" placeholder="category" [(ngModel)]="atomicCategory">
-    <button [(ngModel)]="clear">Delete</button>
-    <br>
-    <br>
-    <br>
-  <div class="table">
-    <table id="atomic-list">
-        <thead>
-          <td>Id</td>
-          <td>Name</td>
-          <td>Category</td>
-          </thead>
-          <tbody>
-            <tr *ngFor="let item of items | filter: atomicName : atomicCategory">
-            <td>{{item.id}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.category}}</td>
-          </tr>
-     </tbody>
-  </table>
-</div>
-
+<atomic-a-table></atomic-a-table>
 
