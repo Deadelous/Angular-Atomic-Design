@@ -1,3 +1,13 @@
-<h1> {{atomic?.id}}</h1>
-<h1> {{atomic?.name}}</h1>
-<h1> {{atomic?.category}}</h1>
+<div class="container">
+<div class="left-column">
+  <atomic-a-image class="detail-img" src="{{atomic?.image}}" (error)="setDefault()" width="400" height="400"></atomic-a-image>
+</div>
+<div class="right-column">
+  <span>Id</span>
+  <atomic-a-header text="{{atomic?.id}}" type="h1"></atomic-a-header>
+  <span>Name</span>
+  <atomic-a-header text="{{atomic?.name}}" type="h2"></atomic-a-header>
+  <span>Category</span>
+  <atomic-a-header text="{{atomic?.category}}" type="h2"></atomic-a-header>
+ </div>
+</div>

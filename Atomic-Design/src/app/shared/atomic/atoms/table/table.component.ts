@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../../../services/search.service';
 import { IAtomicItem } from 'app/shared/model/atomicitem';
+import { FacadeService } from 'app/shared/services/facade.service';
 
 @Component({
   selector: 'atomic-a-table',
@@ -13,19 +13,19 @@ export class TableComponent implements OnInit {
   atomicName = '';
   atomicCategory = '';
 
-  constructor(private searchService: SearchService) {
+  constructor(private facadeService: FacadeService) {
 
   }
 
-  // loadAtoms() {
-  //   return this.searchService.getAtomicItems().subscribe((data: {}) => {
-  //     this.items = data;
-  //   });
-  // }
+  loadAtoms() {
+    return this.facadeService.getAllAtomics().subscribe((data: {}) => {
+      this.items = data;
+    });
+  }
 
   ngOnInit() {
-   // this.loadAtoms();
-    this.items = this.searchService.getAtomicItemsFake();
+    this.loadAtoms();
+    // this.items = this.facadeService.getFakeAtomics();
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {SearchService} from '../../shared/services/search.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import {IAtomicItem} from '../../shared/model/atomicitem';
+import {FacadeService} from '../../shared/services/facade.service';
 
 @Component({
   selector: 'app-atomicdetail',
@@ -12,10 +12,10 @@ export class AtomicdetailComponent implements OnInit {
 
    atomic: IAtomicItem;
 
-  constructor(private searchService: SearchService, private router: ActivatedRoute) { }
+  constructor(private facadeService: FacadeService, private router: ActivatedRoute) { }
 
   GetAtomic(id: any) {
-    this.searchService.GetAtomicId(id)
+    this.facadeService.getAtomicId(id)
       .subscribe((atomicItem: IAtomicItem) => {
           this.atomic = atomicItem;
         },

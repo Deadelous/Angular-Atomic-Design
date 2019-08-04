@@ -26,7 +26,6 @@ export class SearchService {
   GetAtomicId(id): Observable<IAtomicItem> {
     return this.httpClient.get<IAtomicItem>(this.baseUrl + '/atomics/' + id)
       .pipe(
-        retry(1),
         catchError(this.errorHandler)
       );
   }
@@ -39,20 +38,23 @@ export class SearchService {
   getAtomicItems(): Observable<IAtomicItem> {
     return this.httpClient.get<IAtomicItem>(this.baseUrl + '/atomics/')
       .pipe(
-       retry(1),
-       catchError(this.errorHandler)
+        catchError(this.errorHandler)
       );
   }
 
   errorHandler(error) {
-    let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
-      errorMessage = error.error.message;
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error.message);
     } else {
-      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong,
+      console.error(
+        `Backend returned code ${error.status}, ` +
+        `body was: ${error.error}`);
     }
-    console.log(errorMessage);
-    return throwError(errorMessage);
+    // return an observable with a user-facing error message
+    return throwError(
+      'Something bad happened; please try again later.');
   }
-
 }

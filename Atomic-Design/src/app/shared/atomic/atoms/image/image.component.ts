@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
+
 @Component({
   selector: 'atomic-a-image',
   templateUrl: './image.component.html',
@@ -7,21 +8,27 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class ImageComponent implements OnInit, OnChanges {
   @Input() style: string;
-  @Input() url: string;
+  @Input() src: string;
   @Input() type: string;
-  @Input() size: string;
+  @Input() width: string;
+  @Input() height: string;
+  @Input() class: string;
 
   urlStyle: string;
   imageType: string;
-  imageSize: string;
+
 
   constructor() { }
 
-  ngOnInit() {
+  public onError() {
+    this.src = '../../../../../assets/images/placeholder-logo.png';
   }
 
   ngOnChanges() {
-    this.urlStyle = `url(${this.url})`;
+    this.urlStyle = `url(${this.src})`;
     this.imageType = this.type ? 'type-' + this.type : 'type-square';
+  }
+
+  ngOnInit() {
   }
 }
