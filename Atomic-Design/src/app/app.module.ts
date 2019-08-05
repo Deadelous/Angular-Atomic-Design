@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AtomComponent } from './pages/atom/atom.component';
 import { MoleculeComponent } from './pages/molecule/molecule.component';
-import { OrganismComponent } from './pages/organism/organism.component';
+import { AtomicsComponent } from './pages/atomics/atomics.component';
 
 import { SharedModule } from './shared/shared.module';
 import { AtomicdetailComponent } from './pages/atomicdetail/atomicdetail.component';
@@ -19,7 +19,7 @@ import { AtomicdetailComponent } from './pages/atomicdetail/atomicdetail.compone
     HomeComponent,
     AtomComponent,
     MoleculeComponent,
-    OrganismComponent,
+    AtomicsComponent,
     AtomicdetailComponent
   ],
   imports: [

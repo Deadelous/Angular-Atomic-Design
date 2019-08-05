@@ -1,7 +1,14 @@
 .card {
+  display: flex;
   border: 1px solid black;
-  padding: 10%;
-  margin: 5%;
+  margin: 5px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.card-align {
+  flex: 1;
 }
 
 .img{

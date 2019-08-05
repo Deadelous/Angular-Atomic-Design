@@ -1,4 +1,5 @@
-import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import {Component, OnInit, OnChanges, Input} from '@angular/core';
+import {FacadeService} from '../../../services/facade.service';
 
 @Component({
   selector: 'atomic-o-gridcard',
@@ -6,9 +7,20 @@ import { Component, OnInit, OnChanges, Input } from '@angular/core';
   styleUrls: ['./gridcards.component.css']
 })
 export class GridcardsComponent implements OnInit, OnChanges {
-  constructor() { }
+
+  items: any = [];
+
+  constructor(private facadeService: FacadeService) {
+  }
+
+  loadAtoms() {
+    return this.facadeService.getAllAtomics().subscribe((data: {}) => {
+      this.items = data;
+    });
+  }
 
   ngOnInit() {
+    this.loadAtoms();
   }
 
   ngOnChanges() {

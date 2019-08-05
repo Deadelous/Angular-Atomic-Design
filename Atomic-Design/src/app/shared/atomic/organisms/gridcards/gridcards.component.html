@@ -1,24 +1,7 @@
 <div class="grid">
   <div class="grid-row">
-    <div class="grid-column">
-        <atomic-m-card text="Patrick Stewart" paragraph="Teacher"></atomic-m-card>
+    <div class="grid-column" *ngFor="let item of items">
+        <atomic-m-card text="{{item.name}}" paragraph="{{item.category}}" [routerLink]="['/atomics/', item.id]"></atomic-m-card>
      </div>
-       <div class="grid-column">
-         <atomic-m-card text="Daniel Deveraux" paragraph="Student"></atomic-m-card>
-    </div>
-        <div class="grid-column">
-        <atomic-m-card text="Leo Petersen" paragraph="Student"></atomic-m-card>
-    </div>
-</div>
-<div class="grid-row">
-    <div class="grid-column">
-        <atomic-m-card text="Patrick Stewart" paragraph="Teacher"></atomic-m-card>
-     </div>
-       <div class="grid-column">
-         <atomic-m-card text="Truus Deveraux" paragraph="Student"></atomic-m-card>
-    </div>
-        <div class="grid-column">
-        <atomic-m-card text="Freya Petersen" paragraph="Student"></atomic-m-card>
-    </div>
    </div>
 </div>
