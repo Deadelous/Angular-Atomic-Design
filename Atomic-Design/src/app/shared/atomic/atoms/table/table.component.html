@@ -1,5 +1,5 @@
 <input type="text" placeholder="name" [(ngModel)]="atomicName">
-    <input type="text" placeholder="category" [(ngModel)]="atomicCategory">
+    <input type="text" placeholder="description" [(ngModel)]="atomicDescription">
     <br>
     <br>
     <br>
@@ -8,13 +8,15 @@
       <thead>
         <td>Id</td>
         <td>Name</td>
-        <td>Category</td>
+        <td>Description</td>
+        <td>Remove</td>
         </thead>
-        <tbody>
-          <tr *ngFor="let item of items | filter: atomicName : atomicCategory" [routerLink]="['/atomics/', item.id]">
-          <td>{{item.id}}</td>
-          <td>{{item.name}}</td>
-          <td>{{item.category}}</td>
+        <tbody *ngFor="let item of items | filter: atomicName : atomicDescription">
+          <tr>
+          <td >{{item?.id}} </td>
+          <td [routerLink]="['/atomics/', item.id]">{{item?.name}}</td>
+          <td>{{item?.description}}</td>
+            <td><button id="remove" (click)="delete(item)">DELETE ROW</button></td>
         </tr>
    </tbody>
 </table>

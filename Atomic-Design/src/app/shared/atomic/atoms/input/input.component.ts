@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'atomic-a-input',
@@ -7,20 +8,20 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class InputComponent implements OnInit, OnChanges {
   @Input() size: string;
-  @Input() value: string;
-  @Input() color: string;
   @Input() placeholder: string;
+  @Input() type: string;
+  @Input() name: string;
+  @Input() formName: string;
+  @Input() text: string;
+
+  @Input() group: FormGroup
 
   constructor() { }
-
-  inputValue: string;
-  inputColor: string;
 
   ngOnInit() {
   }
 
   ngOnChanges() {
-    this.inputColor = this.color ? 'required' + this.color : 'invalid';
 
   }
 }

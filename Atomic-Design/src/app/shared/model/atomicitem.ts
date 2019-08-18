@@ -1,6 +1,7 @@
 export interface IAtomicItem {
-  id: number;
+  id?: number;
   name: string;
-  category: string;
-  image: string;
+  category?: string;
+  description: string;
+  image?: string;
 }

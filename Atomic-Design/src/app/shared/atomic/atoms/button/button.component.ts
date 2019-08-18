@@ -26,7 +26,4 @@ export class ButtonComponent implements OnInit, OnChanges {
     this.textColorButton = this.textColor ? 'color-' + this.textColor : 'black';
   }
 
-  onClick() {
-    this.buttonClick.emit();
-  }
 }

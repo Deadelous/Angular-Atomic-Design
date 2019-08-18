@@ -1,1 +1,3 @@
-<input placeholder="{{placeholder}}">
+<div class="input" [formGroup]="group">
+<input type="{{type}}" name="{{name}}"  formControlName="{{formName}}" placeholder="{{placeholder}}" required ngDefaultControl>
+</div>

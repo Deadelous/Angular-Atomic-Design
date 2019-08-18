@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from  '@angular/common/http';
@@ -20,6 +20,7 @@ import { TableComponent } from './atomic/atoms/table/table.component';
 
 import { CardComponent } from './atomic/molecules/card/card.component';
 import { SearchComponent } from './atomic/molecules/search/search.component';
+import { FormComponent } from './atomic/molecules/form/form.component';
 
 import { FooterComponent } from './atomic/organisms/footer/footer.component';
 import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.component';
@@ -31,13 +32,14 @@ import { FilterPipe } from './filter/shared.filter';
 
 
 
+
 @NgModule({
   imports: [CommonModule,
     RouterModule,
     FontAwesomeModule,
     FlexLayoutModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, ReactiveFormsModule
   ],
   declarations: [ButtonComponent,
     HeaderComponent,
@@ -52,6 +54,7 @@ import { FilterPipe } from './filter/shared.filter';
     ExternlinkComponent,
     CardComponent,
     SearchComponent,
+    FormComponent,
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,
@@ -70,6 +73,7 @@ import { FilterPipe } from './filter/shared.filter';
     LinkComponent,
     CardComponent,
     SearchComponent,
+    FormComponent,
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,

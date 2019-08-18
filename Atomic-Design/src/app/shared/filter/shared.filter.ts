@@ -5,7 +5,7 @@ import { IAtomicItem } from '../model/atomicitem';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-  transform(atomics: IAtomicItem[], searchName?: string, searchCategory?: string
+  transform(atomics: IAtomicItem[], searchName?: string, searchDescription?: string
   ): IAtomicItem[] {
 
     if (!atomics) {
@@ -14,10 +14,10 @@ export class FilterPipe implements PipeTransform {
 
     if (atomics && atomics.length) {
       return atomics.filter(atomic => {
-        if (searchName && atomic.name.toLowerCase().indexOf(searchName.toLowerCase()) === -1){
+        if (searchName && atomic.name.toLowerCase().indexOf(searchName.toLowerCase()) === -1) {
             return false;
         }
-        if (searchCategory && atomic.category.toLowerCase().indexOf(searchCategory.toLowerCase()) === -1){
+        if (searchDescription && atomic.description.toLowerCase().indexOf(searchDescription.toLowerCase()) === -1) {
             return false;
         }
         return true;

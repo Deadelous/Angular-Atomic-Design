@@ -1,18 +1,22 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-import {atomics} from '../model/mock_atomic';
 import {IAtomicItem} from '../model/atomicitem';
 
-import {Observable, throwError} from 'rxjs';
-import {retry, catchError} from 'rxjs/operators';
+import {Observable, Subject, throwError} from 'rxjs';
+import {catchError, tap} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
-  private readonly baseUrl = 'http://localhost:3000';
-  items: any[];
+  private readonly baseUrl = 'http://localhost:4200';
+
+  private refreshNeed$ = new Subject<void>();
+
+  get Refresh$() {
+    return this.refreshNeed$;
+  }
 
   constructor(private httpClient: HttpClient) {
   }
@@ -23,20 +27,33 @@ export class SearchService {
     })
   };
 
-  GetAtomicId(id): Observable<IAtomicItem> {
-    return this.httpClient.get<IAtomicItem>(this.baseUrl + '/atomics/' + id)
+  GetAtomicId(id: number): Observable<IAtomicItem> {
+    return this.httpClient.get<IAtomicItem>(this.baseUrl + '/api/v1/atomics/' + id)
       .pipe(
         catchError(this.errorHandler)
       );
   }
 
-  getAtomicItemsFake() {
-    this.items = atomics;
-    return this.items;
+  getAtomicItems(): Observable<IAtomicItem> {
+    return this.httpClient.get<IAtomicItem>(this.baseUrl + '/api/v1/atomics')
+      .pipe(
+        catchError(this.errorHandler)
+      );
   }
 
-  getAtomicItems(): Observable<IAtomicItem> {
-    return this.httpClient.get<IAtomicItem>(this.baseUrl + '/atomics/')
+  deleteAtomic(id: number) {
+    return this.httpClient.delete(this.baseUrl + '/api/v1/atomics/' + id)
+      .pipe(
+        catchError(this.errorHandler),
+        tap(() => {
+          this.Refresh$.next();
+        })
+      );
+  }
+
+  createAtomic(atomic) {
+    const body = JSON.stringify(atomic);
+    return this.httpClient.post(this.baseUrl + '/api/v1/atomics', body, this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       );
