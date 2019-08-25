@@ -1,14 +1,17 @@
 #page-container {
-  position: relative;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  background: beige;
 }
 
 #content-wrap {
-  min-height: 100vh;
+  min-height: 80vh;
   padding-bottom: 2.5rem;
 }
 
 #page-footer {
+  width:100%;
   padding-top: 2.5rem;
 }
 

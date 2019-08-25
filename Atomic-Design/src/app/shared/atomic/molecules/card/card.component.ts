@@ -10,15 +10,14 @@ export class CardComponent implements OnInit {
   @Input() style: string;
   @Input() text: string;
   @Input() paragraph: string;
+  @Input() color: string;
 
-  card: string;
-  cardimage: string;
-  container: string;
-  cardStyle: string;
+  cardColor;
 
   constructor() { }
 
   ngOnInit() {
+    this.cardColor = this.color ? 'backgroundcolor-' + this.color : 'black';
   }
 
 }

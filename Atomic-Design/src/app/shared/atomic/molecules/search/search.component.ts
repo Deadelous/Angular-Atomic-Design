@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { atomics } from '../../../model/mock_atomic';
-import { SearchService } from '../../../services/search.service';
+import {FacadeService} from '../../../services/facade.service';
 
 @Component({
   selector: 'atomic-m-search',
@@ -12,7 +11,7 @@ export class SearchComponent implements OnInit {
 
   atomics: any[];
 
-  constructor(private searchService: SearchService) { }
+  constructor(private facadeService: FacadeService) { }
 
   searchName: '';
 

@@ -9,7 +9,7 @@ import {catchError, tap} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class SearchService {
+export class AtomicService {
   private readonly baseUrl = 'http://localhost:4200';
 
   private refreshNeed$ = new Subject<void>();

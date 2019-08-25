@@ -26,12 +26,8 @@ import { FooterComponent } from './atomic/organisms/footer/footer.component';
 import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.component';
 import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
 
-
-import { SearchService } from './services/search.service';
 import { FilterPipe } from './filter/shared.filter';
-
-
-
+import {FacadeService} from './services/facade.service';
 
 @NgModule({
   imports: [CommonModule,
@@ -80,7 +76,7 @@ import { FilterPipe } from './filter/shared.filter';
     FilterPipe,
     CommonModule
   ],
-  providers: [SearchService]
+  providers: [FacadeService]
 })
 export class SharedModule {
 }

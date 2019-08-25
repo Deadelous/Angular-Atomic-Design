@@ -21,6 +21,18 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.backgroundcolor-black {
+  background: #333;
+}
+
+.backgroundcolor-white {
+  background: #FFFFFF;
+}
+
+.backgroundcolor-grey {
+  background:#d0cccc;
+}
+
 @media screen and (max-width: 800px) {
   .card {
     display: flex;

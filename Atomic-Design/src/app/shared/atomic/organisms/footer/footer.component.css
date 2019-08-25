@@ -1,47 +1,35 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  margin-top: 20px;
+  display: flex;
+  width:100%;
 }
 
-.adress {
-  color: white;
-  text-align: center;
-}
-
-.icon-direction {
+.icons {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 50%;
-  height: 50%;
-  margin: -1.8em;
-  padding-left: 10em;
-  padding-top: 1em;
+  flex-direction: row;
+  padding-top: 2%;
+  width: 33%;
+}
 
+.icon-direction {
+  padding-left: 50px;
 }
 
 .footer-title {
-  display: flex;
   justify-content: flex-start;
   text-align: center;
-  width: 40px;
-  height: 40px;
-  margin: -0.5em;
-  padding-left: 5em;
+  width:38%;
+  right:0;
+  left:0;
+  bottom: 0;
 }
 
 .footer-information {
-  display: flex;
+  padding-top: 50px;
+  padding-left: 20px;
   justify-content: flex-end;
-  text-align: center;
-  width: auto;
-  height: auto;
-  margin: 1em;
-  padding-left: 3em;
+  width:38%;
 }
 
 .backgroundcolor-black {

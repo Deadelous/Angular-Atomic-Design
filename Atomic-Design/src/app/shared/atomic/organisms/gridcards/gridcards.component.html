@@ -1,7 +1,7 @@
 <div class="grid">
   <div class="grid-row">
     <div class="grid-column" *ngFor="let item of items">
-        <atomic-m-card text="{{item?.name}}" paragraph="{{item?.description}}" [routerLink]="['/atomics/', item.id]"></atomic-m-card>
+        <atomic-m-card text="{{item?.name}}" paragraph="{{item?.description}}" [routerLink]="['/atomics/', item.id]" color="grey"></atomic-m-card>
      </div>
    </div>
 </div>

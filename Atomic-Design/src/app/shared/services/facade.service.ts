@@ -1,41 +1,41 @@
 import {Injectable, Injector} from '@angular/core';
-import {SearchService} from './search.service';
-import {IAtomicItem} from "../model/atomicitem";
+import {AtomicService} from './atomic.service';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class FacadeService {
-  private searchService: SearchService;
+  private atomicService: AtomicService;
 
-  public get SearchService(): SearchService {
-    if (!this.searchService) {
-      this.searchService = this.injector.get(SearchService);
+  public get AtomicService(): AtomicService {
+    if (!this.atomicService) {
+      this.atomicService = this.injector.get(AtomicService);
     }
-    return this.searchService;
+    return this.atomicService;
   }
 
   constructor(private injector: Injector) {
   }
 
   getRefresh() {
-    return this.searchService.Refresh$;
+    return this.AtomicService.Refresh$;
   }
 
   getAtomicId(id: number) {
-    return this.SearchService.GetAtomicId(id);
+    return this.AtomicService.GetAtomicId(id);
   }
 
   deleteAtomic(id: number) {
-    return this.SearchService.deleteAtomic(id);
+    return this.AtomicService.deleteAtomic(id);
   }
 
   getAllAtomics() {
-    return this.SearchService.getAtomicItems();
+    return this.AtomicService.getAtomicItems();
   }
 
   createAtomics(atomic) {
-    return this.SearchService.createAtomic(atomic);
+    return this.AtomicService.createAtomic(atomic);
   }
 
 }
