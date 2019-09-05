@@ -12,6 +12,7 @@ import { AtomicsComponent } from './pages/atomics/atomics.component';
 
 import { SharedModule } from './shared/shared.module';
 import { AtomicdetailComponent } from './pages/atomicdetail/atomicdetail.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AtomicdetailComponent } from './pages/atomicdetail/atomicdetail.compone
     AtomComponent,
     MoleculeComponent,
     AtomicsComponent,
-    AtomicdetailComponent
+    AtomicdetailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<atomic-a-header text="Send us a Message!" type="h1"></atomic-a-header>
+
+<form class="form" novalidate>
+  <div class="form-input">
+    <atomic-a-header text="Name"></atomic-a-header>
+    <atomic-a-input [group]="contactForm" formName="name" type="text"></atomic-a-input>
+  </div>
+  <div class="form-input">
+    <atomic-a-header text="Phone Number"></atomic-a-header>
+    <atomic-a-input [group]="contactForm" formName="phonenumber" type="text"></atomic-a-input>
+  </div>
+  <div class="form-input">
+    <atomic-a-header text="E-mail Adress"></atomic-a-header>
+    <atomic-a-input [group]="contactForm" formName="email" type="text"></atomic-a-input>
+  </div>
+  <div class="form-input">
+    <atomic-a-textarea></atomic-a-textarea>
+  </div>
+  <div class="form-button">
+    <atomic-a-button text="submit" color="red"></atomic-a-button>
+  </div>
+</form>
+

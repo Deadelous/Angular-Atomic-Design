@@ -1,0 +1,23 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.contact-left-side {
+  flex: auto;
+  width:50%;
+}
+
+.contact-right-side {
+  flex: auto;
+  width: 50%;
+}
+
+#contact-information {
+  padding: 20px;
+}
+
+#contact-location {
+  padding: 20px;
+}

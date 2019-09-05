@@ -17,10 +17,12 @@ import { UnorderdlistComponent } from './atomic/atoms/unorderdlist/unorderdlist.
 import { LinkComponent } from './atomic/atoms/link/link.component';
 import { ExternlinkComponent } from './atomic/atoms/externlink/externlink.component';
 import { TableComponent } from './atomic/atoms/table/table.component';
+import { TextareaComponent } from './atomic/atoms/textarea/textarea.component';
 
 import { CardComponent } from './atomic/molecules/card/card.component';
 import { SearchComponent } from './atomic/molecules/search/search.component';
 import { FormComponent } from './atomic/molecules/form/form.component';
+import { ContactformComponent } from './atomic/molecules/contactform/contactform.component';
 
 import { FooterComponent } from './atomic/organisms/footer/footer.component';
 import { GridcardsComponent } from './atomic/organisms/gridcards/gridcards.component';
@@ -28,6 +30,8 @@ import { NavbarComponent } from './atomic/organisms/navbar/navbar.component';
 
 import { FilterPipe } from './filter/shared.filter';
 import {FacadeService} from './services/facade.service';
+
+
 
 @NgModule({
   imports: [CommonModule,
@@ -46,15 +50,18 @@ import {FacadeService} from './services/facade.service';
     TextComponent,
     UnorderdlistComponent,
     TableComponent,
+    TextareaComponent,
     LinkComponent,
     ExternlinkComponent,
     CardComponent,
     SearchComponent,
     FormComponent,
+    ContactformComponent,
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,
     FilterPipe,
+
   ],
   exports: [ButtonComponent,
     HeaderComponent,
@@ -65,11 +72,13 @@ import {FacadeService} from './services/facade.service';
     TextComponent,
     UnorderdlistComponent,
     TableComponent,
+    TextareaComponent,
     ExternlinkComponent,
     LinkComponent,
     CardComponent,
     SearchComponent,
     FormComponent,
+    ContactformComponent,
     FooterComponent,
     GridcardsComponent,
     NavbarComponent,

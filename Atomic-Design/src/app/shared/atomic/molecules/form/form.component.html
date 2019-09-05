@@ -1,8 +1,7 @@
 <div class="form-description">
   <atomic-a-header text="Create a new Atomic - Atom - Molecule or Organism" type="h1"></atomic-a-header>
 </div>
-<div class="form">
-   <form (ngSubmit)="submitAtomic()" novalidate>
+   <form class="form" (ngSubmit)="submitAtomic()" novalidate>
      <div *ngIf="validMessage != ''">
        <atomic-a-header text="{{validMessage}}" type="h2"></atomic-a-header>
      </div>
@@ -18,4 +17,4 @@
      <button type="submit">Submit</button>
      </div>
   </form>
-</div>
+
